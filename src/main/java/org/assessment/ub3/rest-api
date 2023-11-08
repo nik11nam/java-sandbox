@@ -1,0 +1,9 @@
+1. Add a book to the library => POST: https://library.com/api/books
+
+2. Update an existing book in the library => PUT: https://library.com/api/books/{book-id}
+
+3. Remove a book from the library => DELETE: https://library.com/api/books/{book-id}
+
+4. Fetch a list of all books that match a specified name => GET: https://library.com/api/books?name={book-name}
+
+5. Retrieve the details of a specific book => GET: https://library.com/api/books/{book-id}
