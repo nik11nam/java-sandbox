@@ -26,11 +26,11 @@ public class SimpleTextQuery {
         }
 
         List<List<Integer>> finalList = new ArrayList<>();
-        for (int i=0; i < queries.size(); i++) {
-            List<Integer> foundList = new ArrayList<>();
+        for (int i=0; i < queriesMap.size(); i++) {
+            String[] splitQuery = queriesMap.get(i);
 
-            for (int j=0; j < sentences.size(); j++) {
-                String[] splitQuery = queriesMap.get(i);
+            List<Integer> foundList = new ArrayList<>();
+            for (int j=0; j < sentenceMapByIndex.size(); j++) {
                 Set<String> sentenceSet = sentenceMapByIndex.get(j);
 
                 boolean notFound = false;
